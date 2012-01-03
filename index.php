@@ -1,4 +1,7 @@
 <?php
+/*
+ * if this file is accessed by yourdomain.com/path/to/index.php, BASEPATH will be "/path/to" -> useful for linking
+ */
 define("BASEPATH", str_replace("/" . basename($_SERVER["SCRIPT_NAME"]), "", $_SERVER["SCRIPT_NAME"]));
 //define("ROOT", realpath($_SERVER["DOCUMENT_ROOT"]) . BASEPATH . "/");
 
