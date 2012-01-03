@@ -6,7 +6,8 @@ This is going to be some sort of boilerplate, considered to ease your webdevelop
     [YUI reset](developer.yahoo.com/yui/reset/ "Yahoo reset"), 
     [Eric Meyer's CSS Reset](http://meyerweb.com/eric/thoughts/2007/05/01/reset-reloaded/ "Eric Meyer's CSS Reset"), 
     the one from the [HTML5 Boilerplate](http://html5boilerplate.com/ "HTML5 Boilerplate") 
-    and of course my own experiences), furthermore it provides you with print-styles, helper classes, 
+    and of course my own experiences), furthermore it provides you with print-styles, helper classes 
+    (.unselectable, .hidden, a semantic .clearfix and many more coming soon), 
     styles for HTML5 elements for browsers that are not familiar with them and predefined media queries 
     for mobile web design.
 
@@ -22,6 +23,9 @@ This is going to be some sort of boilerplate, considered to ease your webdevelop
 +   *js/pushState.js* __"ajaxifies" your site__, prevents the default action when clicking an internal link 
     and instead requests the page's content via AJAX and changes the URI to the requested page's one
 
++   *js/makeUnselectable.js* is __teaches IE and Opera__ how __not__ to select something 
+    (recursively on all .unselectable elements)
+
 +   there also is a *.htaccess* file, rewriting yourdomain/dir-where-it-is-placed/xyz to 
     yourdomain/dir-where-it-is-placed/index.php/xyz (thus __creating a virtual path__, 
     which is "parsed" by index.php)
@@ -34,3 +38,22 @@ This is going to be some sort of boilerplate, considered to ease your webdevelop
 +   *index.php* basically does all the work (__parses virtual path__, created by .htaccess, into an array, 
     sets a __BASEPATH__ (if this file is accessed by yourdomain.com/path/to/index.php, 
     BASEPATH will be "/path/to" -> useful for internal linking))
+
+ToDo:
+----------------
+
++   sitemap
+
++   more css helper classes (css tabs, ...)
+
++   working appache.php
+
++   MVC (maybe even leighweight CMS)
+
++   HTML5 shims
+
++   semantic things (responsive tables, ... )
+
++   icons (apple touch icon, favicon)
+
++   more leighweight version/builder
