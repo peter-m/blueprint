@@ -64,3 +64,10 @@ ToDo:
 +   icons ([apple touch icon](http://allinthehead.com/retro/319/how-to-set-an-apple-touch-icon-for-any-site), favicon)
 
 +   more leighweight version (without MVC/CMS and helper classes) or a builder (only select the components you wish)
+
++   add [cross browser HTML5 progress bars](http://www.useragentman.com/blog/2012/01/03/cross-browser-html5-progress-bars-in-depth/)
+    (update CSS reset and add helper class + polyfill)
+
++   add [cross browser HTML5 forms](http://www.useragentman.com/blog/2010/07/27/cross-browser-html5-forms-using-modernizr-webforms2-and-html5widgets/)
+
++   create a __slick__ WYSIWYG editor (with the contenteditable attribute, crossbrowser support (IE))
