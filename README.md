@@ -54,7 +54,7 @@ ToDo:
     (requires some additional logic for the virtual paths (as every combination 
     (yourdomain.com/index.php/xyz where xyz could be EVERYTHING) is possible))
 
-+   <abbr title="Model View Controller">MVC</abbr> (maybe even a leightweight <abbr title="Content Managing System">CMS</abbr>)
++   MVC (maybe even a leightweight CMS)
 
 +   add a [sitemap](http://www.sitemaps.org/) (maybe even generator, would do pretty much the same as the dynamic appcache.php)
 
