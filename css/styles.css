@@ -139,7 +139,7 @@ table {
     text-shadow: none;
 }
 /* =============================================================================
-   Primary styles
+   user styles
    ========================================================================== */
 a {
     color: black;
@@ -156,18 +156,18 @@ a:active {
     top: 1px;
 }
 /* =============================================================================
-   PLACEHOLDER Media Queries for Responsive Design.
+   Media Queries for Responsive Design.
    These override the primary ('mobile first') styles
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 480px) {
-  /* Style adjustments for viewports 480px and over go here */
+@media only screen and (max-width: 768px) {
+  /* Style adjustments for viewports 768px and under go here */
 
 }
 
-@media only screen and (min-width: 768px) {
-  /* Style adjustments for viewports 768px and over go here */
+@media only screen and (max-width: 480px) {
+  /* Style adjustments for viewports 480px and under go here */
 
 }
 

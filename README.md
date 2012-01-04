@@ -8,8 +8,8 @@ This is going to be some sort of boilerplate, considered to ease your webdevelop
     the one from the [HTML5 Boilerplate](http://html5boilerplate.com/ "HTML5 Boilerplate") 
     and of course my own experiences), furthermore it provides you with print-styles, helper classes 
     (.unselectable, .hidden, a semantic .clearfix and many more coming soon), 
-    styles for HTML5 elements for browsers that are not familiar with them and predefined media queries 
-    for mobile web design.
+    styles for HTML5 elements for browsers that are not familiar with them and predefined 
+    [media queries](http://css-tricks.com/css-media-queries/) for mobile web design.
 
 +   *css/ie7.css* __fixes some bugs__ for IE7
 
@@ -18,7 +18,7 @@ This is going to be some sort of boilerplate, considered to ease your webdevelop
     (extends jQuery's ```animate()``` function so that it makes use of CSS3 animations if possible), 
     __[jQuery History](https://github.com/balupton/jquery-history)__ (used for cross-browser 
     pushState functionality and hash-fallback for IE) and __[Modernizr](http://www.modernizr.com/docs/)__ 
-    (teaches older browsers how to display HTML5 elements and provides functionality to load shims if needed))
+    (teaches older browsers how to display HTML5 elements and provides functionality to load shivs if needed))
 
 +   *js/pushState.js* __"ajaxifies" your site__, prevents the default action when clicking an internal link 
     and instead requests the page's content via AJAX and changes the URI to the requested page's one
@@ -42,17 +42,21 @@ This is going to be some sort of boilerplate, considered to ease your webdevelop
 ToDo:
 ----------------
 
-+   more css helper classes ([css tabs](http://css-tricks.com/functional-css-tabs-revisited/), 
++   make a nice [HTML5 sample page](http://coding.smashingmagazine.com/2009/08/04/designing-a-html-5-layout-from-scratch/)
+
++   add more css helper classes ([css tabs](http://css-tricks.com/functional-css-tabs-revisited/), 
     something like the [island object](http://csswizardry.com/2011/10/the-island-object/), 
     [responsive data tables](http://css-tricks.com/responsive-data-tables/), 
-    [fluid images](http://www.alistapart.com/articles/fluid-images/) and more 
+    [fluid images](http://www.alistapart.com/articles/fluid-images/), :after for external links/... and more 
     [semantic stuff](http://www.alistapart.com/articles/responsive-web-design/))
 
-+   working appache.php ([dynamic one](http://www.richardleggett.co.uk/blog/index.php/dynamic-application-cache-manifest-for-php)?)
++   working appache.php ([dynamic one](http://www.richardleggett.co.uk/blog/index.php/dynamic-application-cache-manifest-for-php)?
+    (requires some additional logic for the virtual paths (as every combination 
+    (yourdomain.com/index.php/xyz where xyz could be EVERYTHING) is possible))
 
-+   MVC (maybe even leighweight CMS)
++   <abbr title="Model View Controller">MVC</abbr> (maybe even a leightweight <abbr title="Content Managing System">CMS</abbr>)
 
-+   add a [sitemap](http://www.sitemaps.org/) (maybe even generator)
++   add a [sitemap](http://www.sitemaps.org/) (maybe even generator, would do pretty much the same as the dynamic appcache.php)
 
 +   include some [HTML5 cross browser polyfills](http://github.com/Modernizr/Modernizr/wiki/HTML5-Cross-browser-Polyfills), 
     which are ready to be used in with [Modernizr](http://www.modernizr.com/docs/)
