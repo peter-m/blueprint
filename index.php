@@ -23,7 +23,7 @@ if ($address == "") { // if we are in the home directory...
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
         <title>test</title>
 	<meta name="description" content="A simple test page" />
-	<meta name="author" content="Peter MÃ¼hlbacher" />
+	<meta name="author" content="Peter Mühlbacher" />
 
 	<meta name="viewport" content="width=device-width,initial-scale=1" />
         <link rel="stylesheet" href="<?=BASEPATH?>/css/styles.css" />
@@ -54,4 +54,5 @@ if ($address == "") { // if we are in the home directory...
     <script src="<?=BASEPATH?>/js/libs/jquery.history.js"></script>
     <script src="<?=BASEPATH?>/js/libs/jquery.animate-enhanced.min.js"></script>
     <script src="<?=BASEPATH?>/js/pushState.js"></script><!--<?=BASEPATH?>/js/pushState.js-->
+    <script src="<?=BASEPATH?>/js/makeUnselectable.js"></script>
 </html>

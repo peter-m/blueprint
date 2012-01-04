@@ -42,18 +42,21 @@ This is going to be some sort of boilerplate, considered to ease your webdevelop
 ToDo:
 ----------------
 
-+   sitemap
++   more css helper classes ([css tabs](http://css-tricks.com/functional-css-tabs-revisited/), 
+    something like the [island object](http://csswizardry.com/2011/10/the-island-object/), 
+    [responsive data tables](http://css-tricks.com/responsive-data-tables/), 
+    [fluid images](http://www.alistapart.com/articles/fluid-images/) and more 
+    [semantic stuff](http://www.alistapart.com/articles/responsive-web-design/))
 
-+   more css helper classes (css tabs, ...)
-
-+   working appache.php
++   working appache.php ([dynamic one](http://www.richardleggett.co.uk/blog/index.php/dynamic-application-cache-manifest-for-php)?)
 
 +   MVC (maybe even leighweight CMS)
 
-+   HTML5 shims
++   add a [sitemap](http://www.sitemaps.org/) (maybe even generator)
 
-+   semantic things (responsive tables, ... )
++   include some [HTML5 cross browser polyfills](http://github.com/Modernizr/Modernizr/wiki/HTML5-Cross-browser-Polyfills), 
+    which are ready to be used in with [Modernizr](http://www.modernizr.com/docs/)
 
-+   icons (apple touch icon, favicon)
++   icons ([apple touch icon](http://allinthehead.com/retro/319/how-to-set-an-apple-touch-icon-for-any-site), favicon)
 
-+   more leighweight version/builder
++   more leighweight version (without MVC/CMS and helper classes) or a builder (only select the components you wish)
