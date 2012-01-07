@@ -14,7 +14,7 @@ time, mark, audio, video {
     margin: 0;
     padding: 0;
     border: 0;
-    font-size: 100%;
+    font-size: 100%; /* fixes IE's em resizing bug (god knows why...) */
     font: inherit;
     color: #000;
     vertical-align: baseline;
@@ -195,6 +195,22 @@ a:active {
 }
 .clearfix {
     zoom: 1;
+}
+
+/* replaces the obsolete <center> element */
+.center {
+    margin:0 auto;
+}
+
+/* 
+ * prevent img, etc. from breaking your flexible layout; http://www.alistapart.com/articles/fluid-images/
+ * use the AlphaImageLoader to teach IE how to scale PNGs correctly http://msdn.microsoft.com/en-us/library/ms532969.aspx (also see alistapart article above)
+ */
+img.fluid,
+embed.fluid,
+object.fluid,
+video.fluid {
+  max-width: 100%;
 }
 
 /* =============================================================================

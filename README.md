@@ -6,8 +6,10 @@ This is going to be some sort of boilerplate, considered to ease your webdevelop
     [YUI reset](developer.yahoo.com/yui/reset/ "Yahoo reset"), 
     [Eric Meyer's CSS Reset](http://meyerweb.com/eric/thoughts/2007/05/01/reset-reloaded/ "Eric Meyer's CSS Reset"), 
     the one from the [HTML5 Boilerplate](http://html5boilerplate.com/ "HTML5 Boilerplate") 
-    and of course my own experiences), furthermore it provides you with print-styles, helper classes 
-    (.unselectable, .hidden, a semantic .clearfix and many more coming soon), 
+    and of course my own experiences) and fixes [IE's em resizing bug](http://www.alistapart.com/articles/elastic/), 
+    furthermore it provides you with print-styles, helper classes 
+    (.unselectable, .hidden, .center, [.fluid](http://www.alistapart.com/articles/fluid-images/)
+    (for images and objects), a semantic .clearfix and many more coming soon), 
     styles for HTML5 elements for browsers that are not familiar with them and predefined 
     [media queries](http://css-tricks.com/css-media-queries/) for mobile web design.
 
@@ -28,7 +30,8 @@ This is going to be some sort of boilerplate, considered to ease your webdevelop
 
 +   there also is a *.htaccess* file, rewriting yourdomain/dir-where-it-is-placed/xyz to 
     yourdomain/dir-where-it-is-placed/index.php/xyz (thus __creating a virtual path__, 
-    which is "parsed" by index.php)
+    which is "parsed" by index.php) and fixing the 
+    "[document-compatibility-leading-to-validation-error-problem](http://www.456bereastreet.com/archive/201103/x-ua-compatible_and_html5/)"
 
 +   *appcache.php* is like xyz.appcache (it is .php with a "text/cache-manifest"-header because some servers 
     aren't capable of the [.appcache](http://www.html5rocks.com/en/tutorials/appcache/beginner/ "Tutorial") 
@@ -44,11 +47,8 @@ ToDo:
 
 +   make a nice [HTML5 sample page](http://coding.smashingmagazine.com/2009/08/04/designing-a-html-5-layout-from-scratch/)
 
-+   add more css helper classes ([css tabs](http://css-tricks.com/functional-css-tabs-revisited/), 
-    something like the [island object](http://csswizardry.com/2011/10/the-island-object/), 
-    [responsive data tables](http://css-tricks.com/responsive-data-tables/), 
-    [fluid images](http://www.alistapart.com/articles/fluid-images/), :after for external links/... and more 
-    [semantic stuff](http://www.alistapart.com/articles/responsive-web-design/))
++   add another css file for more advanced css helper classes ([css tabs](http://css-tricks.com/functional-css-tabs-revisited/), 
+    [responsive data tables](http://css-tricks.com/responsive-data-tables/), :after for external links/... and more)
 
 +   working appache.php ([dynamic one](http://www.richardleggett.co.uk/blog/index.php/dynamic-application-cache-manifest-for-php)?
     (requires some additional logic for the virtual paths (as every combination 
@@ -71,3 +71,5 @@ ToDo:
 +   add [cross browser HTML5 forms](http://www.useragentman.com/blog/2010/07/27/cross-browser-html5-forms-using-modernizr-webforms2-and-html5widgets/)
 
 +   create a __slick__ WYSIWYG editor (with the contenteditable attribute, crossbrowser support (IE))
+
++   create a collection of tips for [common mistakes](http://www.456bereastreet.com/archive/201112/the_difference_between_widthauto_and_width100/) and more
