@@ -139,37 +139,219 @@ table {
     text-shadow: none;
 }
 /* =============================================================================
-   user styles
+   =============================================================================
+    YOUR STYLES GO HERE (template from http://verekia.com/initializr/responsive-template)
+   =============================================================================
    ========================================================================== */
+
+/* ===================
+    ALL: Orange Theme
+   =================== */
+body { 
+    font:16px/24px Helvetica, Helvetica Neue, Arial, sans-serif;
+    background-color: #F5F5F5;
+}
+
+h1, h2, h3 {
+    margin: .5em 0;    
+}
+
+h1 {
+    font-size: 2.5em;
+}
+
+h2 {
+    font-size: 2em;
+}
+
+h3 {
+    font-size: 1.5em;
+}
+
+p {
+    margin: .5em 0 .5em .5em;
+}
+
+.body {
+    width:90%;
+    margin:0 5%;
+}
+
+#header-container {
+    border-bottom: 20px solid #ADFF2F;
+}
+#footer-container, #main aside {
+    border-top: 20px solid #ADFF2F;
+}
+
+#header-container,
+#footer-container,
+#main aside {
+    background:#696969;
+}
+
+#title{ color:white; }
+
+::-moz-selection    { background: #ADFF2F; color: #fff; text-shadow: none; }
+::-ms-selection     { background: #ADFF2F; color: #fff; text-shadow: none; }
+::-o-selection      { background: #ADFF2F; color: #fff; text-shadow: none; }
+::-webkit-selection { background: #ADFF2F; color: #fff; text-shadow: none; }
+::selection         { background: #ADFF2F; color: #fff; text-shadow: none; }
+
+
+a, section, header, footer {
+    transition:         all .25s;
+    -webkit-transition: all .25s;
+    -moz-transition:    all .25s;    
+    -o-transition:      all .25s;
+}
+
 a {
-    color: black;
-    text-decoration: none;
-    border-bottom: 1px dotted black;
+    color: #696969;
+    border-bottom: #696969 dotted 1px;
 }
+
 a:hover {
-    color: blue;
-    border-bottom: 1px dotted blue;
+    color: #000;
+    border-bottom: #ADFF2F solid 1px;
 }
-a:active {
-    color: blue;
+
+section:hover, article > header:hover, article > footer:hover {
     position: relative;
-    top: 1px;
+    left: 10px;
+    background-color: #E6E6FA;
+}
+
+#main > footer p, #main > aside p {
+    color: #F5F5F5;
+}
+#main > footer h3, #main > aside h3 {
+    color: #ADFF2F;
+}
+
+/* ==============
+    MOBILE: Menu
+   ============== */
+nav a {
+    display:block;
+    margin-bottom:10px;
+    padding:15px 0;
+    background-color: #ADFF2F;
+    color:white;
+    text-align:center;
+    font-weight:bold;
+    border-bottom: none;
+}
+
+nav a:hover {
+    color:white;
+    background-color: #696969;
+    border-bottom: none;
+}
+/* ==============
+    MOBILE: Main
+   ============== */
+#main {
+    padding:30px 0;
+}
+
+#main aside {
+    color:white;
+    padding:0px 5% 10px;
+}
+/* ==============
+    MOBILE: Footer
+   ============== */
+footer a {
+    color:white;
+    border-bottom: 1px solid #ADFF2F;
+}
+
+footer a:hover {
+    color:white;
+    border-bottom: #696969 solid 1px;
+}
+
+/* ===============
+    ALL: IE Fixes
+   =============== */
+.ie7 #title{ padding-top:20px; }
+/* ==|== media queries ====================================================== */
+@media only screen and (min-width: 480px) {
+/* ====================
+    INTERMEDIATE: Menu
+   ==================== */
+    nav a {
+        float:left;
+        width:27%;
+        margin:0 1.7%;
+        padding:25px 2%;
+        margin-bottom:0;
+    }
+
+    nav li:first-child a { margin-left:0;  }
+    nav li:last-child  a { margin-right:0; }
+/* ========================
+    INTERMEDIATE: IE Fixes
+   ======================== */
+    nav ul li {
+        display:inline;
+    }	
+
+    .oldie nav a {
+        margin:0 0.7%;		
+    }
+}
+@media only screen and (min-width: 768px) {
+/* ====================
+    WIDE: CSS3 Effects
+   ==================== */
+	#header-container,
+	#main aside {
+            -webkit-box-shadow:0 5px 10px #aaa;
+               -moz-box-shadow:0 5px 10px #aaa;
+                    box-shadow:0 5px 10px #aaa;
+	}
+/* ============
+    WIDE: Menu
+   ============ */
+    #title {
+        float:left;
+    }
+
+    nav {
+        float:right;
+        width:38%;
+    }
+/* ============
+    WIDE: Main
+   ============ */
+    #main article {
+        float:left;
+        width:57%;
+    }
+
+    #main aside {
+        float:right;
+        width:28%;
+    }
+}
+
+@media only screen and (min-width: 1140px) {
+/* ===============
+    Maximal Width
+   =============== */
+	.wrapper {
+            width:1026px; /* 1140px - 10% for margins */
+            margin:0 auto;
+	}
 }
 /* =============================================================================
-   Media Queries for Responsive Design.
-   These override the primary ('mobile first') styles
-   Modify as content requires.
+   =============================================================================
+    YOUR STYLES END HERE
+   =============================================================================
    ========================================================================== */
 
-@media only screen and (max-width: 768px) {
-  /* Style adjustments for viewports 768px and under go here */
-
-}
-
-@media only screen and (max-width: 480px) {
-  /* Style adjustments for viewports 480px and under go here */
-
-}
 
 /* =============================================================================
    Non-semantic helper classes

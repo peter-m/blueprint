@@ -13,6 +13,9 @@ This is going to be some sort of boilerplate, considered to ease your webdevelop
     styles for HTML5 elements for browsers that are not familiar with them and predefined 
     [media queries](http://css-tricks.com/css-media-queries/) for mobile web design.
 
++   *css/plugins/\** provides you with some useful ressources, e.g. a [pure css tree menu](http://www.thecssninja.com/css/css-tree-menu)
+    (credits go to [thecssninja.com](http://www.thecssninja.com/))
+
 +   *css/ie7.css* __fixes some bugs__ for IE7
 
 +   *js/libs/* __provides__ you with some libraries (such as __[jQuery](http://jquery.com/)__, 
@@ -20,7 +23,7 @@ This is going to be some sort of boilerplate, considered to ease your webdevelop
     (extends jQuery's ```animate()``` function so that it makes use of CSS3 animations if possible), 
     __[jQuery History](https://github.com/balupton/jquery-history)__ (used for cross-browser 
     pushState functionality and hash-fallback for IE) and __[Modernizr](http://www.modernizr.com/docs/)__ 
-    (teaches older browsers how to display HTML5 elements and provides functionality to load shivs if needed))
+    (teaches older browsers how to display HTML5 elements and [provides functionality to load shivs if needed](http://www.alistapart.com/articles/taking-advantage-of-html5-and-css3-with-modernizr/)))
 
 +   *js/pushState.js* __"ajaxifies" your site__, prevents the default action when clicking an internal link 
     and instead requests the page's content via AJAX and changes the URI to the requested page's one
@@ -41,14 +44,20 @@ This is going to be some sort of boilerplate, considered to ease your webdevelop
 +   *index.php* basically does all the work (__parses virtual path__, created by .htaccess, into an array, 
     sets a __BASEPATH__ (if this file is accessed by yourdomain.com/path/to/index.php, 
     BASEPATH will be "/path/to" -> useful for internal linking))
+    Furthermore it is a nice template to start with, showing off some of the project's features
+    (sidenode: the more curious ones may have noticed the use of insemantic container tags for the ```<header>```
+    and the ```<footer>``` tag to enable full browser width bars - of course this effect could also have been 
+    achieved by using the more semantic ```:before``` and ```:after``` CSS pseudo classes, as shown by 
+    [css-tricks.com](http://css-tricks.com/full-browser-width-bars/), but there are several drawbacks that go
+    hand in hand with this technique, such as the need of declaring the ```overflow-x: hidden``` which has some
+    additional drawbacks (when selecting text the content may disappear!))
 
 ToDo:
 ----------------
 
-+   make a nice [HTML5 sample page](http://coding.smashingmagazine.com/2009/08/04/designing-a-html-5-layout-from-scratch/)
-
 +   add another css file for more advanced css helper classes ([css tabs](http://css-tricks.com/functional-css-tabs-revisited/), 
-    [responsive data tables](http://css-tricks.com/responsive-data-tables/), :after for external links/... and more)
+    [responsive data tables](http://css-tricks.com/responsive-data-tables/), :after for external links/..., a 
+    [CSS3 tooltip](http://t3n.de/news/css3-individuelle-tooltips-ohne-356353/) and more)
 
 +   working appache.php ([dynamic one](http://www.richardleggett.co.uk/blog/index.php/dynamic-application-cache-manifest-for-php)?
     (requires some additional logic for the virtual paths (as every combination 
@@ -71,5 +80,7 @@ ToDo:
 +   add [cross browser HTML5 forms](http://www.useragentman.com/blog/2010/07/27/cross-browser-html5-forms-using-modernizr-webforms2-and-html5widgets/)
 
 +   create a __slick__ WYSIWYG editor (with the contenteditable attribute, crossbrowser support (IE))
+
++   improve .htaccess and add some more features (see the one from [initializr](http://www.initializr.com/builder?print&mode=custom&h5bp-htaccess))
 
 +   create a collection of tips for [common mistakes](http://www.456bereastreet.com/archive/201112/the_difference_between_widthauto_and_width100/) and more

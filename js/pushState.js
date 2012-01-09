@@ -1,6 +1,6 @@
 /* 
- * author  : Peter Mühlbacher
- * website : coming soon
+ * author  : Peter MÃ¼hlbacher
+ * website : peter-m.github.com
  * email   : muehlbacher.peter@gmail.com
  * 
  * FAQ:
@@ -74,15 +74,20 @@ function loadNewContent(uri){
      */
     $("body").animate({left: -screen.width, opacity: 0, leaveTransforms:true}, 1000, function(){ // leaveTransforms is true because we want to be able to set the "left" property to 0 again (otherwise left:-screen.width would be saved as left:0, transform(...) and we couldn't fade it back)
         // load new content
-        /*$.get(uri, function(data){
-            document.title = getNodeContent(data, "title");*/
-            $("body")/*.empty().html(getNodeContent(data, "body"))*/.animate({left: 0, opacity: 1}, 1000);
-            /*enablePushState();
+        $.get(uri, function(data){
+            var content = getNodeContent(data, "body");
+            if (content=="") {
+                content = data;
+            } else {
+                document.title = getNodeContent(data, "title");            
+            }
+            $("body").empty().html(content).animate({left: 0, opacity: 1}, 1000);
+            enablePushState();
         }).error(function(){ // this will only be used if .htaccess is off (otherwise there will never be an error as index.php/xyz always exists)
             document.title = "404";
             $("body").empty().html("404 error - <a href='/boilerplate/'>zur&uuml;ck</a>").animate({left: 0, opacity: 1}, 1000); // specify what to load as a 404 error page here
             enablePushState();
-        });*/
+        });
     });
 }
 
@@ -101,6 +106,7 @@ function enablePushState(){
 function getNodeContent(data, node){
     var start = data.search("<"+node+">"),
         end   = data.search("</"+node+">");
+    if (start == -1) return "";
     data = data.substring(start+node.length+2, end); // +2 because of "<" and ">"
     return data;
 }
