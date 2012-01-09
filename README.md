@@ -43,7 +43,7 @@ This is going to be some sort of boilerplate, considered to ease your webdevelop
 
 +   *index.php* basically does all the work (__parses virtual path__, created by .htaccess, into an array, 
     sets a __BASEPATH__ (if this file is accessed by yourdomain.com/path/to/index.php, 
-    BASEPATH will be "/path/to" -> useful for internal linking))
+    BASEPATH will be "/path/to" -> useful for internal linking))<br/>
     Furthermore it is a nice template to start with, showing off some of the project's features
     (sidenode: the more curious ones may have noticed the use of insemantic container tags for the ```<header>```
     and the ```<footer>``` tag to enable full browser width bars - of course this effect could also have been 
