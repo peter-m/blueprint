@@ -140,7 +140,7 @@ table {
 }
 /* =============================================================================
    =============================================================================
-    YOUR STYLES GO HERE (template from http://verekia.com/initializr/responsive-template)
+    YOUR STYLES GO HERE (original template from http://verekia.com/initializr/responsive-template)
    =============================================================================
    ========================================================================== */
 
@@ -190,7 +190,27 @@ p {
     background:#696969;
 }
 
-#title{ color:white; }
+#title {
+    color:white;
+}
+[data-tooltip]:after { /* for better performance specify the element - e.g. span[data-tooltop] ..., markup has to be like: <span data-tooltip="tooltip">text</span> */
+    transition:         all .25s;
+    -webkit-transition: all .25s;
+    -moz-transition:    all .25s;    
+    -o-transition:      all .25s;
+    display: inline;
+    position: relative;
+    left: 0;
+    height: 100%;
+    padding: 2%;
+    border: 1px solid;
+    opacity: 0;
+    content: attr(data-tooltip);
+}
+[data-tooltip]:hover:after {
+    left: 10px;
+    opacity: 1;
+}
 
 ::-moz-selection    { background: #ADFF2F; color: #fff; text-shadow: none; }
 ::-ms-selection     { background: #ADFF2F; color: #fff; text-shadow: none; }
@@ -199,11 +219,22 @@ p {
 ::selection         { background: #ADFF2F; color: #fff; text-shadow: none; }
 
 
-a, section, header, footer {
+a, section, header, footer, #title {
     transition:         all .25s;
     -webkit-transition: all .25s;
     -moz-transition:    all .25s;    
     -o-transition:      all .25s;
+    left: 0;
+    top: 0;
+    opacity: 1;
+}
+
+section, header, footer {
+    padding: 10px;
+}
+
+#header-container header {
+    padding: 0;
 }
 
 a {
@@ -245,9 +276,10 @@ nav a {
 
 nav a:hover {
     color:white;
-    background-color: #696969;
     border-bottom: none;
+    background-color: #696969;
 }
+
 /* ==============
     MOBILE: Main
    ============== */
@@ -287,6 +319,16 @@ footer a:hover {
         margin:0 1.7%;
         padding:25px 2%;
         margin-bottom:0;
+    }
+    
+    nav a:hover {
+        background-color: #ADFF2F;
+        position: relative;
+        top: 10px;
+    }
+
+    nav:hover a:not(:hover) {
+        opacity: .6;
     }
 
     nav li:first-child a { margin-left:0;  }

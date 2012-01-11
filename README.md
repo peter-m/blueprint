@@ -13,7 +13,7 @@ This is going to be some sort of boilerplate, considered to ease your webdevelop
     styles for HTML5 elements for browsers that are not familiar with them and predefined 
     [media queries](http://css-tricks.com/css-media-queries/) for mobile web design.
 
-+   *css/plugins/\** provides you with some useful ressources, e.g. a [pure css tree menu](http://www.thecssninja.com/css/css-tree-menu)
++   *css/plugins/...* provides you with some useful ressources, e.g. a [pure css tree menu](http://www.thecssninja.com/css/css-tree-menu)
     (credits go to [thecssninja.com](http://www.thecssninja.com/))
 
 +   *css/ie7.css* __fixes some bugs__ for IE7
@@ -58,6 +58,10 @@ ToDo:
 +   add another css file for more advanced css helper classes ([css tabs](http://css-tricks.com/functional-css-tabs-revisited/), 
     [responsive data tables](http://css-tricks.com/responsive-data-tables/), :after for external links/..., a 
     [CSS3 tooltip](http://t3n.de/news/css3-individuelle-tooltips-ohne-356353/) and more)
+
++   merge ie7.css and styles.css (make use of Modernizr's dynamic .ie7 class)
+
++   organize styles.css and document it for readability's sake!
 
 +   working appache.php ([dynamic one](http://www.richardleggett.co.uk/blog/index.php/dynamic-application-cache-manifest-for-php)?
     (requires some additional logic for the virtual paths (as every combination 

@@ -41,7 +41,7 @@ if ($address == "") { // if we are in the home directory...
     <body>
         <div id="header-container">
             <header class="body clearfix">
-                <h1 id="title">h1#title</h1>
+                <h1 id="title" data-tooltip="tooltip">h1#title</h1>
                 <nav>
                     <ul>
                         <li><a href="<?=BASEPATH?>/">home</a></li>
